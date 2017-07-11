@@ -1,12 +1,106 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<meta name="viewport" content="white=deice-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<title>bootstrap帮助文档</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/body.css" />
 	</head>
+
 	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+					<a class="navbar-brand" href="index.html">boorstrap帮助文档</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="#sgh" class="dropdown-toggle">栅格化
+							</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">排版
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#paiban">标题</a>
+								</li>
+								<li>
+									<a href="#">页面主题</a>
+								</li>
+								<li>
+									<a href="#">中心内容</a>
+								</li>
+								<li>
+									<a href="#">被删除的文本</a>
+								</li>
+								<li>
+									<a href="#">插入文本</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</nav>
+		<div class="jumbotron text-center">
+			<h1>boorstrap帮助文档</h1>
+			<p>这是一个帮助使用者记住bootstrap框架关键类的文档</p>
+			<p>
+				<a class="btn btn-primary btn-lg" href="#sgh" role="button">开始</a>
+			</p>
+		</div>
+		<a href="" id="sgh"> </a>
+		<br />
+		<div class="grid">
+			<h3>栅格化</h3>
+			<p>bootstrap提供了一套响应式的栅格系统，随着屏幕尺寸的增加，系统会自动分为12列
+				<a href="Rasterize.html">[实例]</a>
+			</p>
+			<p>栅格参数：</p>
+			<ul>
+				<li>.col-xs-(超小型设备：手机)</li>
+				<li>.col-sm-(小型设备：平板电脑)</li>
+				<li>.col-md-(中型设备：台式电脑)</li>
+				<li>.col-lg-(大型设备：大屏幕电脑)</li>
+			</ul>
+			<p class="lead">注意:<code>.col</code>必须包含在<code>row</code>类里,<code>row</code>必须包含在<code>.container</code>与<code>.container</code>中，以便为其赋予更好的排序和内补
+				<a href="Rasterize.html">[实例]</a>
+			</p>
+
+		</div>
+		<div class="grid">
+			<h3>排版<a id="paiban"></a></h3>
+			<hr />
+			<h4>标题</h4>
+			<p>HTML 中的所有标题标签，<code>&lt;h1&gt;</code> 到 <code>&lt;h6&gt;</code> 均可使用。另外，还提供了<code>.h1</code> 到 <code>.h6</code> 类，为的是给内联（inline）属性的文本赋予标题的样式。</p>
+			<p>在标题内还可以包含<code>&lt;small&gt;</code> 标签或赋予 <code>.small</code> 类的元素，可以用来标记副标题。</p>
+			<h4>页面主体</h4>
+			<p>Bootstrap 将全局 font-size 设置为 14px，line-height 设置为 1.428。这些属性直接赋予<code>body</code> 元素和所有段落元素。另外，<code>p</code> （段落）元素还被设置了等于 1/2 行高（即 10px）的底部外边距（margin）。</p>
+			<h4>中心内容</h4>
+			<p>通过添加<code>.lead</code> 类可以让段落突出显示。</p>
+			<h4>被删除的文本</h4>
+			<p>对于被删除的文本使用<code>&lt;del&gt;</code> 标签。</p>
+			<h4>插入文本</h4>
+			<p>额外插入的文本使用<code>&lt;ins&gt;</code> 标签。</p>
+		</div>
+
+		<div class="grid">
+
+		</div>
+
 		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
 	</body>
+
 </html>
